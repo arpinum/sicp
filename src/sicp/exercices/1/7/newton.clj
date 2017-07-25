@@ -1,22 +1,20 @@
-(ns newton)
-
-(defn abs [x]
-  (if (> x 0) x (- x)))
+(ns newton
+  (:import (java.lang.Math))
+  )
 
 (defn average
   [x y]
   (/ (+ x y) 2))
 
-(defn square [x] (* x x))
-
 (defn improve
   [guess x]
   (average guess (/ x guess)))
 
+(defn square [x] (Math/pow x 2))
 
 (defn good-enough?
   [guess x]
-  (< (abs (- (square guess) x)) 0.001))
+  (< (Math/abs (- (square guess) x)) 0.001))
 
 (defn sqrt-iter [guess x]
   (if (good-enough? guess x)
