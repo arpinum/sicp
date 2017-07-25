@@ -2,7 +2,7 @@
   (:require [clojure.test :refer :all])
   (:require [square :refer :all]))
 
-(deftest square-roots
+(deftest squares
   (testing "compute squares"
     (is (= 4 (square 2))))
 
