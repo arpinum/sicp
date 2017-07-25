@@ -1,4 +1,4 @@
-(ns square-roots)
+(ns square)
 
 (defn square [x] (* x x))
 

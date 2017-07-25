@@ -1,6 +1,6 @@
-(ns square-roots-test
+(ns square-test
   (:require [clojure.test :refer :all])
-  (:require [square-roots :refer :all]))
+  (:require [square :refer :all]))
 
 (deftest square-roots
   (testing "compute squares"
