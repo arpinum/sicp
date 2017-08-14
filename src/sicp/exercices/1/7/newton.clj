@@ -10,15 +10,7 @@
   [guess x]
   (average guess (/ x guess)))
 
-(defn square [x] (Math/pow x 2))
-
 (defn good-enough?
-  [guess x]
-  (<
-    (Math/abs (- (square guess) x))
-    0.001))
-
-(defn better-good-enough?
   [oldGuess guess]
   (<
     (Math/abs (- guess oldGuess))
@@ -26,7 +18,7 @@
   )
 
 (defn sqrt-iter [guess oldGuess x]
-  (if (better-good-enough? oldGuess guess)
+  (if (good-enough? oldGuess guess)
     guess
     (sqrt-iter (improve guess x) guess
                x)
