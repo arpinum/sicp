@@ -1,4 +1,4 @@
-(ns square)
+(ns sicp.exercices.1.3.square)
 
 (defn square [x] (* x x))
 

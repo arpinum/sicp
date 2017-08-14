@@ -1,4 +1,4 @@
-(ns newton
+(ns sicp.exercices.1.7.newton
   (:import (java.lang.Math))
   )
 

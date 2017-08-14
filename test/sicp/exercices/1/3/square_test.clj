@@ -1,6 +1,6 @@
-(ns square-test
+(ns sicp.exercices.1.3.square-test
   (:require [clojure.test :refer :all])
-  (:require [square :refer :all]))
+  (:require [sicp.exercices.1.3.square :refer :all]))
 
 (deftest squares
   (testing "compute squares"
