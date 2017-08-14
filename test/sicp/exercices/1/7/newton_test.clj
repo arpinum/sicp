@@ -5,6 +5,9 @@
 (deftest newton
 
   (testing "sqrt"
-    (is (= 577/408 (sqrt-iter 1 2 )))
+    (is (= 1.4142135623746899 (sqrt 2 )))
     )
+  )
+
+(deftest sqrt-test
   )
