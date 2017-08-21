@@ -7,9 +7,8 @@
     (+ (f-recurse (- n 1)) (f-recurse (- n 2)) (f-recurse (- n 3)))))
 
 (defn f-iter [n]
-  
-  (defn f-iter-recur
-    [count a b c]
+
+  (defn f-iter-recur [count a b c]
     (if (= count 0) c
                     (f-iter-recur (- count 1) (+ a b c) a b)
                     ))
