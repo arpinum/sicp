@@ -10,7 +10,7 @@
 
   (defn f-iter-recur [count a b c]
     (if (= count 0) c
-                    (f-iter-recur (- count 1) (+ a b c) a b)
+                    (recur (- count 1) (+ a b c) a b)
                     ))
 
-  (f-iter-recur n 2 1 0))
+  (f-iter-recur n (bigint 2) (bigint 1) (bigint 0)))
